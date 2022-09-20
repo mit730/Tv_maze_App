@@ -1,0 +1,16 @@
+.input {
+  text-align: center;
+}
+.actor {
+  width: 250px;
+  height: 20px;
+  padding: 5px;
+  margin: 5px 5px;
+  border-radius: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.textt {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

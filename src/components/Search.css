@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+}
+.details {
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  color: rgb(11, 11, 11);
+}
