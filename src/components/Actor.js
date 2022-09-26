@@ -6,16 +6,19 @@ const Actor = () => {
   const [input, setInput] = useState("");
   const [actorData, setActorData] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get(`https://api.tvmaze.com/search/people?q=${input}`)
-      .then((response) => {
-        console.log(response);
-        setActorData(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+ useEffect(() => {
+    const getData = setTimeout(() => {
+      axios
+        .get(`https://api.tvmaze.com/search/people?q=${input}`)
+        .then((response) => {
+          console.log(response);
+          setActorData(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }, 2000);
+    return () => clearTimeout(getData);
   }, [input]);
 
   return (
