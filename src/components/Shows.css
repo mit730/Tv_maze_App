@@ -1,22 +1,29 @@
-.showInput {
-  text-align: center;
+.showInput{
+    text-align: center;
 }
-.show {
-  width: 250px;
-  height: 20px;
-  padding: 5px;
-  margin: 5px 5px;
-  border-radius: 15px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+.show{
+    width: 250px;
+    height: 20px;
+    padding: 5px;
+    margin: 5px 5px;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.poster {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
+.poster{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
-.text {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.text{
+    text-align: center;
+    margin-top: 1%;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.para{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    width: 75vw;
+    margin: auto;
 }
