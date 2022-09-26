@@ -7,15 +7,18 @@ const Shows = () => {
   const [showData, setShowData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`https://api.tvmaze.com/search/shows?q=${input}`)
-      .then((response) => {
-        console.log(response);
-        setShowData(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    const getData = setTimeout(() => {
+      axios
+        .get(`https://api.tvmaze.com/search/shows?q=${input}`)
+        .then((response) => {
+          console.log(response);
+          setShowData(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }, 2000);
+    return () => clearTimeout(getData);
   }, [input]);
 
   return (
