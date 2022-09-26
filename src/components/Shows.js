@@ -56,7 +56,7 @@ const Shows = () => {
                   </div>
                 )}
 
-                <div>
+                <div className="para">
                   <p
                     style={{ height: "100px" }}
                     dangerouslySetInnerHTML={{
